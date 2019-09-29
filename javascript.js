@@ -1,20 +1,16 @@
-function BMI() {
     let bmi,weight,height;
-    input=prompt('weight');
-    input=prompt('height');
+    input=parseInt(prompt('weight'));
+    input=parseInt(prompt('height'));
     bmi=(weight/height*2);
-    if (bmi<18){
-        alert("underweight");
+    if (bmi < 18){
+        document.write("Underweight");
     }
-    else if (bmi<25){
-        alert("normal");
-    }
-    else if (bmi<30){
-        alert("overweight");
+    else if (bmi <25){
+        document.write("Normal");
+        }
+    else if (bmi <30){
+                document.write("Overweight");
     }
     else{
-        alert("obese");
+                document.write("Obese");
     }
-
-
-}
